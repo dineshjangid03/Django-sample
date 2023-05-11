@@ -24,3 +24,7 @@ def contact(request):
     
     return render(request, 'contact.html')
     # return HttpResponse("this is contactpage")
+
+def demo(request):
+    data=Contact.objects.all()
+    return render(request, 'demo.html', {'data':data})
