@@ -1,0 +1,8 @@
+<h1>Retrieve data from the database:</h1>
+<ul>
+    {% for item in data %}
+        <li>{{ item.name }}</li>
+        <li>{{ item.email }}</li>
+        <li>{{ item.phone }}</li>
+    {% endfor %}
+</ul>
